@@ -1,0 +1,54 @@
+/* Name:Bhargavi Reddy
+  Course name: GUI I
+  File type: .css file
+  Sources used: https://www.w3schools.com/css
+  */
+
+/*TThe following fuction is used to adjust margin*/
+body {
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/*This changes the margin between table and user input */
+table {
+  padding: 20px;
+}
+
+/*This function is used to change fonts for the header and add color*/
+th {
+  background-image: linear-gradient(#ADD8E6, 	#F08080);
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+/*The function adds numbers to color the even numbers in the cells (2n+1)*/
+td:nth-child(even) {
+  background-image: linear-gradient(turquoise,olive);
+
+}
+
+/*The function adds numbers to color the odd numbers in the cells (2n-1)*/
+td:nth-child(odd) {
+  background-image: linear-gradient(lightblue, gold);
+}
+
+/*This changes the font to italics*/
+h3{
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*This is to add the paragraph properties*/
+p {
+  display: inline-block;
+  text-align: left;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+  background-image: linear-gradient(lightgreen, lightblue);
+  text-align:center;
+  padding: 70px;
+  border-radius:40px;
+}

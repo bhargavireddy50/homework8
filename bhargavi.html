@@ -1,0 +1,62 @@
+<!--The decleratio is to let the user know it is a html file-->
+
+<!DOCTYPE html>
+<html>
+<!--used to contains head elements-->
+<head>
+  <!--It is the link between document and js, css and the html-->
+  <link rel="stylesheet" href="css/hw7.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+
+  <!--charset attribute for encoding HTML page-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div class="row">
+    <div class="container-fluid">
+      <form id="input">
+        <!--This gives the heading-->
+        <h1>Multiplication Table</h1>
+        <!--This gives the description of the table's functions and states the rules-->
+          <p>This table below provides a dynamic multiplication table based on the user's inputs. (1)The table does not accept decimals (2) The table counts blank values as zero (3)The table only accepts integers. The starting numbers of both horizontal 1st and vertical 1st  have to be less than their ending value. <p>
+         <!--This is to ask the user to enter values-->
+      <h3>Dynamic Multiplication Table <h3>
+      <br>
+      Enter the horizontal 1st value<input class="InputtheNum" name="h1" id="h1" type="number"><br>
+<div  id="h1slider"></div>
+        Enter the horizontal 2nd value <input class="InputtheNum" name="h2" id="h2" type="number"><br>
+<div  id="h2slider"></div>
+            Enter the vertical 1st value  <input class="InputtheNum" name="v1" id="v1" type="number"><br>
+<div  id="v1slider"></div>
+          Enter the vertical 2nd value <input class="InputtheNum" name="v2" id="v2" type="number"><br>
+<div  id="v2slider"></div>
+        <!--this is used to add the click button to display the results-->
+        <button type="submit" value="Submit">Submit</button>
+        <button class="btn btn-dark" type="button" id="save" onclick='tablesave()'>Save</button>
+      </form>
+    </div>
+
+
+      <!-- This gives us the output -->
+        <div class="container-fluid pt-9" id="mytable">
+      <table class="table table-bordered" id="my_Table">
+      </table>
+    </div>
+    <div class="col-11 mx-auto" id="tabletab">
+      <ul></ul>
+    </div>
+</div>
+  <!--the following adds scripts-->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"></script>
+
+    <script src="js/hw7.js"></script>
+</body>
+</html>
